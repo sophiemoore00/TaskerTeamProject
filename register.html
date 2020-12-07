@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Register</title>
+   
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+	
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+	
+	<!-- Main JS -->
+	<script src="js/RegisterSubmit.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Register now!</h2>
+                    <form method="POST" id= "RegisterForm">
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" id= "namebox" placeholder="NAME">
+							
+                        </div>
+						<div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="EMAIL" id="email">
+                        </div>
+						<div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="PASSWORD" id="psw">
+                        </div>
+                        
+                         <div class="p-t-20">
+                          <button onclick="checkRegister()" class="btn btn--radius btn--green"  type="submit">Register for Tasker!</button>
+						  <br>
+						  <a href="login.html"> Click here to login </a>
+						
+		
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBpXq5q_p1DdRxz8F7izcQtCKseloZrNwQ",
+    authDomain: "register-eed43.firebaseapp.com",
+    databaseURL: "https://register-eed43.firebaseio.com",
+    projectId: "register-eed43",
+    storageBucket: "register-eed43.appspot.com",
+    messagingSenderId: "644695402855",
+    appId: "1:644695402855:web:5cf4f9f670515e85dae7c2",
+    measurementId: "G-LCEH8JCFC0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
